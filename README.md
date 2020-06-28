@@ -5,7 +5,7 @@
 ## Setup on Ubuntu 16.04+
 Install the required packages.  
 `sudo apt install git postgresql postgresql-contrib redis-server`  
-[Install golang-1.10](https://gist.github.com/ndaidong/4c0e9fbae8d3729510b1c04eb42d2a80)
+[Install golang-1.12](https://gist.github.com/ndaidong/4c0e9fbae8d3729510b1c04eb42d2a80)
 
 Don't forget to make your GOPATH export persistent.
 
@@ -60,7 +60,7 @@ DB_PWD=<postgres password> \ # Postgres DB password, NOT system account password
 HOST_URI='http://localhost' \ # Internal wallet api
 HOST_PORT=':8082' \ # Internal wallet api port
 RPC_PWD=<turtle-service RPC password>  \ # Your turtle-service RPC password
-RPC_PORT=':8070' \ # Your turtle-service RPC port
+RPC_PORT=':8447' \ # Your turtle-service RPC port
 go run wallet.go utils.go
 ```
 * services/user/run.sh  
